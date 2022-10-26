@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main">
+    <!-- android:background="#4C1D1D" -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        tools:context=".MainActivity3">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="50dp"
+            android:gravity="center"
+            android:minHeight="48dp"
+
+            android:text="Length"
+            android:textColor="#FFFFFF"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/almendra_sc" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            tools:context=".MainActivity3">
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/km"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="35dp"
+                android:layout_weight="1"
+                android:background="@drawable/button1"
+                android:backgroundTint="#FB8C00"
+                android:fontFamily="@font/allerta_stencil"
+                android:onClick="ctof"
+                android:text="km -> mile"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/mk"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/button3"
+                android:fontFamily="@font/allerta_stencil"
+                android:onClick="ctok"
+                android:text="mile -> km"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            tools:context=".MainActivity3">
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/ci"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="35dp"
+                android:layout_weight="1"
+                android:background="@drawable/button5"
+                android:fontFamily="@font/allerta_stencil"
+                android:onClick="ftoc"
+                android:text="cm -> inch"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/ic"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/button5"
+                android:fontFamily="@font/allerta_stencil"
+                android:onClick="ftok"
+                android:text="inch -> cm"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            tools:context=".MainActivity3">
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/my"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="35dp"
+                android:layout_weight="1"
+                android:background="@drawable/button4"
+                android:fontFamily="@font/allerta_stencil"
+                android:onClick="ktoc"
+                android:text="m -> yard"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/ym"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/button2"
+                android:fontFamily="@font/allerta_stencil"
+                android:onClick="ktof"
+                android:text="yard -> m"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical" />
+
+
+    </LinearLayout>
+</ScrollView>
